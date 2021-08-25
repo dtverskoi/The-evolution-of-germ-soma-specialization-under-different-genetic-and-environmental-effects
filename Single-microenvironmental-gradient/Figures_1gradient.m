@@ -39,7 +39,7 @@ for lN=1:2
                 
                 for lR=1:4
                     r=0.2*lR;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r)]);
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r) '.txt']);
                     p=Q(:,1:4);
                     avp(lG,lR,:)=mean(p,1);
                     stdp(lG,lR,:)=std(p);
@@ -103,7 +103,7 @@ for lN=1:2
                 
                 for lR=1:4
                     r=0.2*lR;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r)]);   
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r) '.txt']);   
                     p=Q(:,11);
                     pn=Q(:,12);
                     avp(lG,lR)=mean(p);
@@ -165,7 +165,7 @@ for lN=1:2
                 
                 for lR=1:4
                     r=0.2*lR;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r)]);   
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r) '.txt']);   
                     p=Q(:,14);
                     avp(lG,lR)=mean(p);
                     stdp(lG,lR)=std(p);
@@ -227,7 +227,7 @@ for lN=1:2
                 
                 for lR=1:4
                     r=0.2*lR;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r)]);
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r) '.txt']);
                     p=Q(:,15);
                     avp(lG,lR)=mean(p);
                     stdp(lG,lR)=std(p);
@@ -289,7 +289,7 @@ for lN=1:2
                 
                 for lR=1:4
                     r=0.2*lR;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r)]);
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r) '.txt']);
 
                     p=Q(:,9);
                     avp(lG,lR)=mean(p);
@@ -356,7 +356,7 @@ for lN=1:2
                 
                 for lR=1:4
                     r=0.2*lR;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r)]);
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) 'r' num2str(10*r) '.txt']);
                     p=Q(:,16);
                     avp(lG,lR)=mean(p);
                     stdp(lG,lR)=std(p);
