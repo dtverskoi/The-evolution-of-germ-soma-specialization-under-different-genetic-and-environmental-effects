@@ -169,8 +169,6 @@ for lN=1:3
         errorbar(linspace(0.1,0.9,9),avp(2,:),stdp(2,:),'-s','MarkerSize',10,'MarkerEdgeColor','red','MarkerFaceColor','red','LineWidth',2,'Color','red')
         errorbar(linspace(0.1,0.9,9),avp(3,:),stdp(3,:),'-s','MarkerSize',10,'MarkerEdgeColor',[0 230/255 115/255],'MarkerFaceColor',[0 230/255 115/255],'LineWidth',2,'Color',[0 230/255 115/255])
         hold off
-        %[l,p] = boundedline(linspace(0.1,0.9,9), avp(1,:), stdp(1,:), 'blue', linspace(0.1,0.9,9), avp(2,:), stdp(2,:), 'red', linspace(0.1,0.9,9), avp(3,:), stdp(3,:), 'green');
-        %outlinebounds(l,p);
         
         if (lb==2)&&(lN==1)
             legend('G=2','G=8','G=32','FontSize',25,'Location','northeast')
