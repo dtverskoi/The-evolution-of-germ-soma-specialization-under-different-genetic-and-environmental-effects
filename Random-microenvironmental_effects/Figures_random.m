@@ -39,7 +39,7 @@ for gg=1:3
                 
                 for lk=1:9
                     k1=0.1*lk;
-                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1)]);
+                    Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) '.txt']);
                     p=(sort(Q(:,1:4)'))';
                     avp(lG,lk,:)=mean(p,1);
                     stdp(lG,lk,:)=std(p);
@@ -100,7 +100,7 @@ for lN=1:3
             
             for lk=1:9
                 k1=0.1*lk;
-                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1)]);
+                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) '.txt']);
                 p=Q(:,11);
                 pn=Q(:,12);
                 avp(lG,lk)=mean(p);
@@ -158,7 +158,7 @@ for lN=1:3
             
             for lk=1:9
                 k1=0.1*lk;
-                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1)]);
+                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) '.txt']);
                 p=Q(:,14);
                 avp(lG,lk)=mean(p);
                 stdp(lG,lk)=std(p);
@@ -215,7 +215,7 @@ for lN=1:3
             
             for lk=1:9
                 k1=0.1*lk;
-                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1)]);
+                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) '.txt']);
                 p=Q(:,15);
                 avp(lG,lk)=mean(p);
                 stdp(lG,lk)=std(p);
@@ -272,7 +272,7 @@ for lN=1:3
             
             for lk=1:9
                 k1=0.1*lk;
-                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1)]);
+                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) '.txt']);
                 p=Q(:,9);
                 avp(lG,lk)=mean(p);
                 stdp(lG,lk)=std(p);
@@ -329,7 +329,7 @@ for lN=1:3
             
             for lk=1:9
                 k1=0.1*lk;
-                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1)]);
+                Q=readmatrix(['N' num2str(N) 'G' num2str(G) 'be' num2str(beta) 'k' num2str(10*k1) '.txt']);
                 p=Q(:,16);
                 avp(lG,lk)=mean(p);
                 stdp(lG,lk)=std(p);
